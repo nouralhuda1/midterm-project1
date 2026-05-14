@@ -29,9 +29,7 @@ def collector():
             <button type="submit">Submit</button>
         </form>
         <p style="color: green;">{{ status }}</p>
-        <br>
-        <a href="http://localhost:5001">Go to Dashboard (App 2)</a>
     ''', status=status_message)
 
-if name == "__main__":
+if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
